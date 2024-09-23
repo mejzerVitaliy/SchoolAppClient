@@ -1,8 +1,13 @@
+import Header from '@/components/molecules/Header'
+import Navbar from '@/components/molecules/Navbar'
 import React from 'react'
 
 const page:React.FC = () => {
     return (
-        <div>page</div>
+        <main className='w-full'>
+            <Header />
+            <Navbar/>
+        </main>
     )
 }
 
