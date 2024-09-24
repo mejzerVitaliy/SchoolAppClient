@@ -1,12 +1,31 @@
-// Страница, где будет возможность продолжить как гость или войти как администратор
+import H2 from '@/components/atoms/H2'
+import P from '@/components/atoms/P'
+import Link from 'next/link'
 import React from 'react'
 
-const page:React.FC = () => {
-    return (
-        <main>
-            Auth page
-        </main>
-    )
+const Page: React.FC = () => {
+	return (
+		<div className='flex justify-center items-center h-screen bg-gray-100'>
+			<div className='bg-white shadow-lg rounded-lg p-8 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg'>
+				<H2 className='font-bold mb-1 md:mb-2'>Добро пожаловать</H2>
+				<P>
+					Вы можете
+					<Link
+						href='/auth/authAdmin'
+						className='text-blue-500 hover:text-blue-700'
+					>
+						{' '}
+						войти как администратор
+					</Link>
+					, или{' '}
+					<Link href='/' className='text-blue-500 hover:text-blue-700'>
+						продолжить как гость
+					</Link>
+					.
+				</P>
+			</div>
+		</div>
+	)
 }
 
-export default page
+export default Page
