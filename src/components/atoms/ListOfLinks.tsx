@@ -7,10 +7,10 @@ const ListOfLinks:React.FC = () => {
         <section className='w-full h-full flex justify-between items-center'>
             <ul className='h-full flex justify-start items-center gap-[20px] text-center'>
                 <Link href={'/'}><li className='w-[200px] h-[40px] rounded-[20px] bg-gray-400 '>Головна</li></Link>
+                <Link href={'/about'}><li className='w-[200px] h-[40px] rounded-[20px] bg-gray-400 '>Про нас</li></Link>
                 <Link href={'/posts'}><li className='w-[200px] h-[40px] rounded-[20px] bg-gray-400 '>Новини</li></Link>
-                <Link href={''}><li className='w-[200px] h-[40px] rounded-[20px] bg-gray-400 '>івпвава</li></Link>
-                <Link href={''}><li className='w-[200px] h-[40px] rounded-[20px] bg-gray-400 '>впвапів</li></Link>
-                <Link href={''}><li className='w-[200px] h-[40px] rounded-[20px] bg-gray-400 '>впвпіпрі</li></Link>
+                <Link href={'/gallery'}><li className='w-[200px] h-[40px] rounded-[20px] bg-gray-400 '>Галерея</li></Link>
+                <Link href={'/contacts'}><li className='w-[200px] h-[40px] rounded-[20px] bg-gray-400 '>Контакти</li></Link>
             </ul>
             
             <Link href={'/auth'}>
