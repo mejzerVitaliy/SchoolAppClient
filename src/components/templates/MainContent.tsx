@@ -7,7 +7,7 @@ const MainContent:React.FC = () => {
     return (
         <main className='w-full'>
             <Header />
-            <Navbar />
+            <Navbar currentPage='/' />
             
             <MainSection/>
         </main>
