@@ -5,8 +5,8 @@ import React from 'react'
 
 const Page: React.FC = () => {
 	return (
-		<div className='flex justify-center items-center h-screen bg-gray-100'>
-			<div className='bg-white shadow-lg rounded-lg p-8 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg'>
+		<main className='flex justify-center items-center h-screen bg-gray-100'>
+			<article className='bg-white shadow-lg rounded-lg p-8 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg'>
 				<H2 className='font-bold mb-1 md:mb-2'>Добро пожаловать</H2>
 				<P>
 					Вы можете
@@ -23,8 +23,8 @@ const Page: React.FC = () => {
 					</Link>
 					.
 				</P>
-			</div>
-		</div>
+			</article>
+		</main>
 	)
 }
 
