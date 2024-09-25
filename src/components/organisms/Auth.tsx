@@ -1,20 +1,17 @@
 'use client'
+
 import { SubmitHandler, useForm } from 'react-hook-form'
 import H2 from '../atoms/H2'
-
-type Inputs = {
-	username: string
-	password: string
-}
+import { AuthTypes } from '@/types/AuthTypes'
 
 const Auth = () => {
 	const {
 		register,
 		handleSubmit,
 		formState: { errors },
-	} = useForm<Inputs>()
+	} = useForm<AuthTypes>()
 
-	const onSubmit: SubmitHandler<Inputs> = data => {
+	const onSubmit: SubmitHandler<AuthTypes> = data => {
 		console.log(data)
 	}
 
@@ -61,7 +58,6 @@ const Auth = () => {
 				</div>
 
 				<button
-					type='submit'
 					className='w-full bg-blue-500 text-xs md:text-sm lg:text-base text-white py-2 rounded-lg hover:bg-blue-600 transition duration-200 md:py-3 '
 				>
 					Войти

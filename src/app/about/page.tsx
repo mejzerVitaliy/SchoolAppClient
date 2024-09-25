@@ -6,7 +6,7 @@ const page:React.FC = () => {
     return (
         <main>
             <Header />
-            <Navbar />
+            <Navbar currentPage='/about' />
             <div>about us</div>
         </main>
         
