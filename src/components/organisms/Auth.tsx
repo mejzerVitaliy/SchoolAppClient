@@ -1,8 +1,8 @@
 'use client'
 
+import { AuthTypes } from '@/types/AuthTypes'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import H2 from '../atoms/H2'
-import { AuthTypes } from '@/types/AuthTypes'
 
 const Auth = () => {
 	const {
@@ -16,7 +16,7 @@ const Auth = () => {
 	}
 
 	return (
-		<div className='flex items-center justify-center min-h-screen bg-gray-100'>
+		<section className='flex items-center justify-center min-h-screen bg-gray-100'>
 			<form
 				onSubmit={handleSubmit(onSubmit)}
 				className='bg-white shadow-md rounded-lg px-8 py-6 max-w-xs md:max-w-sm lg:max-w-md w-full'
@@ -25,7 +25,7 @@ const Auth = () => {
 					Войдите в свой аккаунт
 				</H2>
 
-				<div className='mb-3 md:mb-4 lg:mb-5'>
+				<article className='mb-3 md:mb-4 lg:mb-5'>
 					<input
 						type='text'
 						placeholder='Имя пользователя'
@@ -39,9 +39,9 @@ const Auth = () => {
 							Это поле обязательно для заполнения
 						</span>
 					)}
-				</div>
+				</article>
 
-				<div className='mb-4 md:mb-5 lg:mb-6'>
+				<article className='mb-4 md:mb-5 lg:mb-6'>
 					<input
 						type='password'
 						placeholder='Пароль'
@@ -55,15 +55,13 @@ const Auth = () => {
 							Это поле обязательно для заполнения
 						</span>
 					)}
-				</div>
+				</article>
 
-				<button
-					className='w-full bg-blue-500 text-xs md:text-sm lg:text-base text-white py-2 rounded-lg hover:bg-blue-600 transition duration-200 md:py-3 '
-				>
+				<button className='w-full bg-blue-500 text-xs md:text-sm lg:text-base text-white py-2 rounded-lg hover:bg-blue-600 transition duration-200 md:py-3 '>
 					Войти
 				</button>
 			</form>
-		</div>
+		</section>
 	)
 }
 

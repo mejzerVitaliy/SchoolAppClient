@@ -1,16 +1,16 @@
 import React from 'react'
 import Header from '../molecules/Header'
 import Navbar from '../molecules/Navbar'
-import MainSection from '../organisms/MainSection'
+import PostSection from '../organisms/PostSection'
 
-const MainContent: React.FC = () => {
+const PostContent: React.FC = () => {
 	return (
 		<main className='w-full'>
 			<Header />
-			<Navbar currentPage='/' />
-			<MainSection />
+			<Navbar currentPage='/posts' />
+			<PostSection />
 		</main>
 	)
 }
 
-export default MainContent
+export default PostContent
